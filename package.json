@@ -1,0 +1,30 @@
+{
+  "name": "scraper-minecraft-jars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/scraper.js",
+  "scripts": {
+    "scrape:vanilla": "ts-node src/scrapers/server/scrapeVanilla.ts",
+    "scrape:paper": "ts-node src/scrapers/server/scrapePaper.ts",
+    "scrape:folia": "ts-node src/scrapers/server/scrapeFolia.ts",
+    "scrape:travertine": "ts-node src/scrapers/server/scrapeTravertine.ts",
+    "scrape:waterfall": "ts-node src/scrapers/server/scrapeWaterfall.ts",
+    "scrape:velocity": "ts-node src/scrapers/server/scrapeVelocity.ts",
+    "scrape:bungeecord": "ts-node src/scrapers/server/scrapeBungeeCord.ts",
+    "scrape:spiget": "ts-node src/scrapers/plugins/scrapeSpiget.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1440.0",
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
